@@ -10,6 +10,7 @@ class mariadb::repo (
   $os = $::operatingsystem ? {
     'RedHat' => 'rhel',
     'CentOS' => 'centos',
+    'OracleLinux' => 'rhel',
     'Fedora' => 'fedora',
     'Debian' => 'debian',
     'Ubuntu' => 'ubuntu',
