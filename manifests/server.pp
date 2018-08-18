@@ -31,6 +31,7 @@ class mariadb::server (
   $includedir           = $mariadb::params::includedir,
   $config_dir           = $mariadb::params::config_dir,
   String $root_password = $mariadb::params::root_password,
+  $remove_default_accounts = false,
   $override_options     = {},
 
   Boolean $auth_pam     = $mariadb::params::auth_pam,
